@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(82,202,249);
+    background: linear-gradient(54deg, rgba(82,202,249,1) 0%, rgba(141,246,160,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#root{
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.slides-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fas{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.slides-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 70vh;
+    overflow:hidden;
+    margin: 0 30px;
+}
+.slide{
+    background-color: white;
+    border-radius: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+.slide img{
+    width: 30vw;
+}
+.slide p{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.points-list{
+    display: flex;
+    justify-content: center;
+}
+.fa-circle{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
