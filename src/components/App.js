@@ -63,7 +63,7 @@ class App extends Component {
         return (
             <div className='main'>
                 <div className='slides-area'>
-                    <i className="fas fa-chevron-left" onClick={this.prevSlide}></i>
+                    <p onClick={this.prevSlide}>&#8249;</p>
                     <List
                         base={base}
                         activeSlide={activeSlide}
@@ -71,7 +71,7 @@ class App extends Component {
                         onTouchStart={this.touchStart}
                         onTouchMove={this.touchMove}
                     />
-                    <i className="fas fa-chevron-right" onClick={this.nextSlide}></i>
+                    <p onClick={this.nextSlide}>&#8250;</p>
                 </div>
                 <Points
                     base={base}

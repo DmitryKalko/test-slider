@@ -4,7 +4,7 @@ import './App.css';
 
 const Item = (props) => {
     const { name, url, id, changeActiveSlide } = props;
-    console.log(sideOfTurn);
+
     return (
         <li
             className='slide'

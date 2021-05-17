@@ -22,10 +22,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-.fas{
-    font-size: 40px;
+.slides-area p{
+    font-size: 60px;
+    font-weight: bold;
     color: white;
-    cursor: pointer;
 }
 .slides-list{
     display: flex;
@@ -60,9 +60,18 @@ body{
     display: flex;
     justify-content: center;
 }
-.fa-circle{
-    color: white;
-    font-size: 20px;
-    margin: 5px;
-    cursor: pointer;
+.active-circle{
+    width: 20px;
+    height: 20px;
+    border: white 2px solid;
+    border-radius: 50%;
+}
+.not-active-circle{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+.circle{
+    margin: 0 5px;
 }

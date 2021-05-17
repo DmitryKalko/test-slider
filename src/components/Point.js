@@ -6,11 +6,11 @@ const Point = (props) => {
     const { id, activeSlide, changeActiveSlide } = props;
     if (activeSlide === id) {
         return (
-            <i className="fas fa-circle"></i>
+           <div className='circle not-active-circle'></div>
         )
     } else {
         return (
-            <i className="far fa-circle" onClick={() => changeActiveSlide(id)}></i>
+            <div className='circle active-circle' onClick={() => changeActiveSlide(id)}></div>
         )
     };
 };
