@@ -65,7 +65,7 @@ class App extends Component {
 
     render() {
         const { activeSlide, base } = this.state;
-        console.log(this.state);
+    
         return (
             <div className='main'>
                 <div className='slides-area'>
