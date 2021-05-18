@@ -7,15 +7,25 @@ body{
     background: rgb(82,202,249);
     background: linear-gradient(54deg, rgba(82,202,249,1) 0%, rgba(141,246,160,1) 100%);
     font-family: Arial, Helvetica, sans-serif;
-}
-#root{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+span{
+    text-align: center;
+    padding: 0 10px;
 }
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
 }
 .slides-area{
     display: flex;
@@ -26,15 +36,14 @@ body{
     font-size: 60px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 .slides-list{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    height: 70vh;
     overflow:hidden;
-    margin: 0 30px;
+    margin: 20px 20px;
 }
 .slide{
     background-color: white;
@@ -44,17 +53,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5px 30px;
+    margin: 5px 10px;
     padding: 10px;
     cursor: pointer;
 }
 .slide img{
-    width: 30vw;
+    width: 25vw;
 }
 .slide p{
     font-size: 10px;
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 .points-list{
     display: flex;
@@ -74,4 +84,5 @@ body{
 }
 .circle{
     margin: 0 5px;
+    cursor: pointer;
 }

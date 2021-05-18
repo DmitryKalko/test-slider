@@ -10,6 +10,11 @@ class App extends Component {
         base: Base,
         activeSlide: 4,
         coordX: null,
+        width: null,
+    };
+
+    componentDidMount(){
+        this.setState({width: window.innerWidth});
     };
 
     prevSlide = () => {
@@ -43,16 +48,16 @@ class App extends Component {
     };
 
     touchMove = (e) => {
-        const { coordX } = this.state;
+        const { coordX, width } = this.state;
         if (!coordX) {
             return false
         };
         let finalCoordX = e.touches[0].clientX;
         let diff = finalCoordX - coordX;
-        if (diff > 50) {
+        if (diff > (width / 7)) {
             this.prevSlide();
             this.setState({ coordX: null });
-        } else if (diff < -50) {
+        } else if (diff < -(width / 7)) {
             this.nextSlide();
             this.setState({ coordX: null });
         };
@@ -60,6 +65,7 @@ class App extends Component {
 
     render() {
         const { activeSlide, base } = this.state;
+        console.log(this.state);
         return (
             <div className='main'>
                 <div className='slides-area'>
